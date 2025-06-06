@@ -1,0 +1,11 @@
+.nameWelcome span {
+    display: inline-block;
+    animation: flip 2s ease-in;
+    animation-delay: calc(.2s * var(--c));
+}
+
+@keyframes flip {
+    0%, 80% {
+        transform: rotateY(360deg)
+    }
+}
