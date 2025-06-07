@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function Projects() {
 
     const projectInfo = [
-        { 'name': 'Fitness Tracker', 'link': 'https://hyperstrength-fitness-tracker-six.vercel.app/', 'img': '/hyperstrength-poster.png' },
+        { 'name': 'Fitness Tracker (In Progress)', 'link': 'https://hyperstrength-fitness-tracker-six.vercel.app/', 'img': '/hyperstrength-poster.png' },
     ]
 
     return (
