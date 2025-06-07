@@ -4,7 +4,6 @@ export default function Projects() {
 
     const projectInfo = [
         { 'name': 'Fitness Tracker', 'link': 'https://hyperstrength-fitness-tracker-six.vercel.app/', 'img': '/hyperstrength-poster.png' },
-        { 'name': 'Weather App', 'link': '#', 'img': '' }
     ]
 
     return (
