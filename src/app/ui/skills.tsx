@@ -40,10 +40,13 @@ export default function Skills() {
     return (
         <div>
             <h2 className="text-4xl">Skills</h2>
+            <div className="flex flex-col md:flex-row">
             {
                 Object.entries(skillsList).map((category, index) => {
-                    return (<div key={index}>
-                        {category[0]}
+                    return (<div className="basis-1/2" key={index}>
+                        <span className="text-2xl">
+                            {category[0]}
+                        </span>
                         <ul>
                             {
                                 category[1].map((el, ndx) => {
@@ -61,6 +64,7 @@ export default function Skills() {
                     )
                 })
             }
+            </div>
         </div>
     )
 }

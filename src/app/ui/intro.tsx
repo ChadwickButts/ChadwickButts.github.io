@@ -1,7 +1,7 @@
 export default function Intro() {
     return (
         <>
-            <h1 className="text-7xl nameWelcome">
+            <h1 className="text-5xl md:text-6xl nameWelcome">
                 <span style={{ "--c": 1 } as React.CSSProperties}>H</span>
                 <span style={{ "--c": 2 } as React.CSSProperties}>i</span>,&nbsp;
                 <span style={{ "--c": 3 } as React.CSSProperties}>I</span>'

@@ -7,17 +7,17 @@ import Skills from "./skills"
 export default function PortfolioHome() {
     return (
         <div className="content">
-            <main className="flex flex-row">
-                <div className="basis-2/4">
+            <main className="flex flex-col">
+                <div>
                     <section className="introduction">
                         <Intro />
                     </section>
                     <br />
-                    <section className="experience">
+                    <section className="max-w-5xl experience">
                         <Skills />
                     </section>
                 </div>
-                <div className="basis-2/4">
+                <div>
                     <section className="projects">
                         <Projects />
                     </section>
