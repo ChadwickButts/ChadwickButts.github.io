@@ -1,6 +1,7 @@
 "use client"
 
 import Intro from "./intro"
+import Projects from "./projects"
 import Skills from "./skills"
 
 export default function PortfolioHome() {
@@ -15,7 +16,7 @@ export default function PortfolioHome() {
                     <Skills/>
                 </section>
                 <section className="projects">
-                    
+                    <Projects/>
                 </section>
             </main>
         </div>
