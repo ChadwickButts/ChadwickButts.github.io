@@ -23,11 +23,11 @@ export default function Skills() {
             , { 'skill': 'Apollo Server', 'years': ' <1', 'layer': 'Backend' }
         ],
         'Cloud': [
-            { 'skill': 'Cloudwatch', 'years': 1, 'layer': 'Cloud Services' }
-            , { 'skill': 'Lambda', 'years': 1, 'layer': 'Cloud Services' }
-            , { 'skill': 'API Gateway', 'years': 1, 'layer': 'Cloud Services' }
-            , { 'skill': 'Amplify', 'years': 1, 'layer': 'Cloud Services' }
-            , { 'skill': 'S3', 'years': 1, 'layer': 'Cloud Services' }
+            { 'skill': 'Amazon Cloudwatch', 'years': 1, 'layer': 'Cloud Services' }
+            , { 'skill': 'AWS Lambda', 'years': 1, 'layer': 'Cloud Services' }
+            , { 'skill': 'Amazon API Gateway', 'years': 1, 'layer': 'Cloud Services' }
+            , { 'skill': 'AWS Amplify', 'years': 1, 'layer': 'Cloud Services' }
+            , { 'skill': 'Amazon S3', 'years': 1, 'layer': 'Cloud Services' }
         ],
         'Versioning': [
             { 'skill': 'Jira', 'years': 9, 'layer': 'Versioning' }
@@ -45,7 +45,7 @@ export default function Skills() {
                 Object.entries(skillsList).map((category, index) => {
                     return (<div className="basis-1/2" key={index}>
                         <span className="text-2xl">
-                            {category[0]}
+                            {category[0] === "Cloud" ? 'Cloud Services' : category[0]}
                         </span>
                         <ul>
                             {
