@@ -19,7 +19,7 @@ export default function Intro() {
                 I'm a software engineer with 7 years of experience specializing in frontend development.<br />
                 <b>React</b> and <b>NextJS</b> is where I excel, but I'm no stranger to <b>C#</b> and backend development.<br />
                 <b>I'm currently looking for my next opportunity as a Frontend or Full Stack engineer.</b><br />
-                Here's what I've been working on in the meantime.
+                Check out what I've been working on in the meantime.
             </p>
         </>
     )
