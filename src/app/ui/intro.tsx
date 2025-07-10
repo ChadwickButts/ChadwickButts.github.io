@@ -16,10 +16,10 @@ export default function Intro() {
                 <span style={{ "--c": 12 } as React.CSSProperties}>k</span>
             </h1>
             <p className="introText">
-                I'm a software engineer with 7 years of experience specializing in frontend development.<br />
-                <b>React</b> and <b>NextJS</b> is where I excel, but I'm no stranger to <b>C#</b> and backend development.<br />
-                <b>I'm currently looking for my next opportunity as a Frontend or Full Stack engineer.</b><br />
-                Here's what I've been working on in the meantime.
+                I'm a passionate Full Stack Engineer with 7 years of experience, specializing in frontend development.<br />
+                I have a strong understanding of <b>Javascript</b> and <b>C#</b> with a track record of developing high quality user experiences 
+                with frameworks such as <b>React</b>. <b>I'm currently looking for my next opportunity as a Frontend/Full Stack engineer.</b><br />
+                Take a look at what I've been working on in the meantime.
             </p>
         </>
     )
