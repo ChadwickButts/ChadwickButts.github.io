@@ -1,9 +1,11 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Projects() {
 
     const projectInfo = [
-        { 'name': 'Fitness Tracker (In Progress)', 'link': 'https://hyperstrength-fitness-tracker-six.vercel.app/', 'img': '/hyperstrength-poster.png' },
+        { name: 'Fitness Tracker (In Progress)', link: 'https://hyperstrength-fitness-tracker-six.vercel.app/', page: '', img: '/hyperstrength-poster.png' },
+        { name: 'Weather App', link: '', page: '/Weather','img': '/hyperstrength-poster.png'  }
     ]
 
     return (
@@ -14,12 +16,15 @@ export default function Projects() {
                     projectInfo.map((project, index) => {
                         return <div key={index}>
                             <div>
-                                <a className="font-medium"
-                                    href={project.link}
-                                    target="_blank" rel="noopener noreferrer" >
-                                    <img src={project.img} width={400} height={200} />
-                                    {project.name}
-                                </a>
+                                {(project.link !== '') &&
+                                    <a className="font-medium"
+                                        href={project.link}
+                                        target="_blank" rel="noopener noreferrer" >
+                                        <img src={project.img} width={400} height={200} />
+                                        {project.name}
+                                    </a>
+                                }
+                                {(project.page !== '') && <Link href={project.page}>Weather App</Link>}                                
                             </div>
                         </div>
                     })

@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;;
+}
+
+#weatherApp {
+    background-color: #3b3d40;
+    color: #ffffff;
+}
+
+#weatherApp nav {
+    text-align: center;
+}
+
+#searchFieldContainer {
+    text-align: center;
+    height: 100px;
+    position: relative;
+}
+
+#searchField {
+    height: 35px;
+    width: 300px;
+    margin: 30px 0;
+    display: inline-block;
+    border-radius: 20px;
+    border-width: 0px;
+    background-color: #676b70;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+}
+
+#searchBtn {
+    position: absolute;
+    top: 35px;
+    translate: -40px;
+    border-radius: 20px;
+    background-color: #676b70;
+    border: 0px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#viewsUL {
+    max-width: 400px;
+    margin: auto;
+    padding: 0;
+    background-color: #282c34;
+    border-radius: 10px;
+}
+
+#viewsUL li {
+    display: inline-block;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    border-color: #282c34;
+}
+
+#viewsUL li button {
+    padding: 14px;
+    background-color: inherit;
+    border: 0px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#viewsUL li:hover, #viewsUL li.active {
+    border-color: #ffffff;
+    cursor: pointer;
+    background-color: #3f4551;
+}
+
+.viewContainer {
+    padding: 30px;
+}
+
+.viewContainer .location, .viewContainer #time {
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+/* Daily View */
+.dayContainer {
+    display: block;
+    height: 350px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.dayContainer h3 {
+    margin: 0px;
+    margin-left: 5px;
+}
+
+.dayHorizontal {
+    display: block;
+    height: 300px;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.dayCardBtn {
+    cursor: pointer;
+    border: 0px;
+    padding: 0;
+    margin: 20px 8px;
+    background-color: transparent;
+}
+
+.dayCard {
+    display: inline-block;
+    height: 230px;
+    width: 150px;
+    padding: 10px;  
+    border: 1px solid #222;
+    border-radius: 10px;
+    background-color: #676b70;
+    box-sizing: border-box;
+    color: #222222;
+}
+
+.dayCard:hover, .dayCard.active {
+    background-color: #282c34;
+    transform: scale3d(1.05, 1.05, 1.05);
+    color: #fff;
+}
+
+
+.dayCardMain {
+    height: 150px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.dayCard figure {
+    position: relative;
+    height: 110px;
+    text-align: center;
+    margin: 0px;
+    font-size: 24px;
+}
+
+.dayCard figcaption:nth-of-type(1) {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    translate: -50%;
+}
+
+.dayCard figcaption:nth-of-type(2) {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    translate: -50%;
+}
+
+.dayCardHigh, .dayCardLow {
+    display: block;
+    font-size: 12px;
+    color: #fff;
+}
+
+.dayCardTemps, .dayCardFeelsTemp {
+    font-size: 14px;
+    color: #fff;
+}
+
+.dayCardDate {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.dayCardFeels {
+    display: block;
+    font-size: 12px;
+    color: #fff;
+}
+
+/* Daily View End */
+
+
+
+/* Hourly View */
+.table {
+    width: 100%;
+    height: 600px;
+    background-color: #676b70;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.table:hover {
+    overflow: auto;
+}
+
+.table thead {
+    position: sticky;
+    top: 0;
+    background-color: #282c34;
+}
+
+
+table {
+    border-collapse: collapse;
+    border: 0px;
+}
+
+th, td {
+    vertical-align: middle;
+    text-align: left;
+    padding: 5px 10px;
+    margin: 0;
+    width: 10%;
+}
+
+.table tr th:nth-of-type(2), .table tr td:nth-of-type(2) {
+    width: 5%;
+}
+
+tr {
+    border: 1px solid #fff;
+}
+
+.hrlyConditionsIcon {
+    vertical-align: middle;
+    max-height: 40px;
+}
+
+.hrlyTemp {
+    vertical-align: middle;
+}
+/* Hourly View */  
+
+/* Today View */
+.currentSection { 
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#currentWeather {    
+    display: block;
+    background-color: #676b70;
+    box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #282c34;    
+    overflow-x: hidden;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#currentWeather .leftSide, #currentWeather .rightSide {
+    display: inline-block;
+    margin: 0 5px;
+    width: 375px;
+    padding: 30px 0;
+    text-align: left;
+}
+
+#currentWeather .rightSide {
+    text-align: right;
+}
+
+#temp {
+    font-size: 6rem;
+}
+
+#conditions {
+    margin-top: 5px;
+    font-size: 1.5rem;
+}
+
+.details {
+    display: inline-block;
+    width: 150px;
+}
+
+#weatherIcon {
+    display: inline-block;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.extraDetails {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* Today View End */
+
+
+@media screen and (max-width: 700px) {
+    #searchField {
+        width: 250px;
+        margin: 30px 0;
+    }
+
+    #viewsUL {
+        margin: auto;
+        padding: 10px;
+    }
+
+    #viewsUL li {
+        display: block;
+        padding: 10px;
+        margin: 0;
+    }
+
+    /* Daily View */
+
+    .dayContainer {
+        width: 100%;
+    }
+
+    /* Daily View End */
+
+    /* Today View */
+    
+    .currentSection {
+        max-width: 500px;
+    }
+    
+    #currentWeather .leftSide, #currentWeather .rightSide {
+        padding: 10px;
+    }
+
+    #extraDetails {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    /* Today View End */
+}
